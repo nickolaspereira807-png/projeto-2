@@ -1,0 +1,253 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffde96e1b0a, pid=16392, tid=14964
+#
+# JRE version:  (21.0.11+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.11+1-b1163.116, mixed mode, sharing, tiered, compressed class ptrs, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1b0a]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: Intel(R) Celeron(R) N4000 CPU @ 1.10GHz, 2 cores, 3G,  Windows 11 , 64 bit Build 26100 (10.0.26100.9444)
+Time: Wed Sep 30 03:33:12 2026 Hora oficial do Brasil elapsed time: 0.726629 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x000000d895000000,0x000000d895100000],  sp=0x000000d8950fdd90,  free space=1015k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1b0a]
+C  [jimage.dll+0x1c93]
+C  [jimage.dll+0x2581]
+V  [jvm.dll+0x22a262]
+V  [jvm.dll+0xcdbb0]
+V  [jvm.dll+0x87e223]
+V  [jvm.dll+0x4649b1]
+V  [jvm.dll+0x466651]
+C  [jli.dll+0x52f4]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2cd87]
+C  [ntdll.dll+0xacaec]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000018c50
+
+
+Registers:
+RAX=0x00007ffde96e4298, RBX=0x000000d8950fde81, RCX=0x00007ffde96e6000, RDX=0x000000000000630d
+RSP=0x000000d8950fdd90, RBP=0x000000d8950fde80, RSI=0x0000000000007227, RDI=0x000000d8950fde80
+R8 =0x000000000000001c, R9 =0x00007ffde96e6000, R10=0x00007ffde5dc0000, R11=0x8101010101010100
+R12=0x0000000000000000, R13=0x000001df9c1be55c, R14=0x000000d8950feef0, R15=0x00007ffda384ca00
+RIP=0x00007ffde96e1b0a, EFLAGS=0x0000000000010247
+
+XMM[0]=0x0000000000000000 0x0000000000000000
+XMM[1]=0x2f6d762f6c616e72 0x65746e692f6b646a
+XMM[2]=0x736e6f6974706f2f 0x6d762f6c616e7265
+XMM[3]=0x0000000000000000 0x0000000000000000
+XMM[4]=0x0000000000000000 0x0000000000000000
+XMM[5]=0x0000000000000000 0x0000000000000000
+XMM[6]=0x0000000000000000 0x0000000000000000
+XMM[7]=0x0000000000000000 0x0000000000000000
+XMM[8]=0x0000000000000000 0x0000000000000000
+XMM[9]=0x0000000000000000 0x0000000000000000
+XMM[10]=0x0000000000000000 0x0000000000000000
+XMM[11]=0x0000000000000000 0x0000000000000000
+XMM[12]=0x0000000000000000 0x0000000000000000
+XMM[13]=0x0000000000000000 0x0000000000000000
+XMM[14]=0x0000000000000000 0x0000000000000000
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001f80
+
+
+Top of Stack: (sp=0x000000d8950fdd90)
+0x000000d8950fdd90:   0000000000000000 0000000000000000   ................
+0x000000d8950fdda0:   0000000000000000 0000000000000000   ................
+0x000000d8950fddb0:   000001df9c1be900 00007ffde96e1c93   ..........n.....
+0x000000d8950fddc0:   0000000000000009 000001df9c1be900   ................
+0x000000d8950fddd0:   0000000000000000 0000000000000000   ................
+0x000000d8950fdde0:   0000000000000000 0000000000000000   ................
+0x000000d8950fddf0:   0000000000000000 0000000000000000   ................
+0x000000d8950fde00:   0000007000000000 0000000000000000   ....p...........
+0x000000d8950fde10:   0000000000000000 0000000000000000   ................
+0x000000d8950fde20:   00002efb7fb281b0 0061006200310064   ........d.1.b.a.
+0x000000d8950fde30:   00007ffda3829ff0 0000000000000017   ................
+0x000000d8950fde40:   000001df9c1be900 000000d8950feef0   ................
+0x000000d8950fde50:   0000000000000009 00007ffde96e2581   .........%n.....
+0x000000d8950fde60:   00700041005c006c 0074006100440070   l.\.A.p.p.D.a.t.
+0x000000d8950fde70:   000001df9c288b80 005c006c00610063   ..(.....c.a.l.\.
+0x000000d8950fde80:   61622e6176616a2f 692f6b646a2f6573   /java.base/jdk/i
+0x000000d8950fde90:   2f6c616e7265746e 6f6974706f2f6d76   nternal/vm/optio
+0x000000d8950fdea0:   006400490000736e 0030003200610065   ns..I.d.e.a.2.0.
+0x000000d8950fdeb0:   0032002e00360032 007000630061005c   2.6...2.\.a.c.p.
+0x000000d8950fdec0:   000001df9c288b80 005c00730074006e   ..(.....n.t.s.\.
+0x000000d8950fded0:   0069006e0075006a 00340033005c0065   j.u.n.i.e.\.3.4.
+0x000000d8950fdee0:   0032002e00390031 005c0030002e0032   1.9...2.2...0.\.
+0x000000d8950fdef0:   0069006e0075006a 00750072005c0065   j.u.n.i.e.\.r.u.
+0x000000d8950fdf00:   006d00690074006e 00690062005c0065   n.t.i.m.e.\.b.i.
+0x000000d8950fdf10:   00650073005c006e 0072006500760072   n.\.s.e.r.v.e.r.
+0x000000d8950fdf20:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf30:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf40:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf50:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf60:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf70:   0000000000000000 0000000000000000   ................
+0x000000d8950fdf80:   0000000000000000 0000000000000000   ................
+
+Instructions: (pc=0x00007ffde96e1b0a)
+0x00007ffde96e1a0a:   8a 05 00 46 00 00 f6 d8 48 1b d2 48 83 e2 d8 48
+0x00007ffde96e1a1a:   8b 54 1a 40 e8 c1 0e 00 00 48 c7 43 48 00 00 00
+0x00007ffde96e1a2a:   00 8b 4b 0c 83 f9 ff 74 0c e8 f4 0c 00 00 c7 43
+0x00007ffde96e1a3a:   0c ff ff ff ff 48 8b 4b 70 48 85 c9 74 12 ba 10
+0x00007ffde96e1a4a:   00 00 00 e8 12 0f 00 00 48 c7 43 70 00 00 00 00
+0x00007ffde96e1a5a:   48 83 c4 20 5b c3 40 53 48 83 ec 20 48 8b d9 48
+0x00007ffde96e1a6a:   8d 0d 10 48 00 00 e8 bf 0c 00 00 83 6b 08 01 75
+0x00007ffde96e1a7a:   24 48 8b d3 48 8d 0d 93 45 00 00 e8 42 08 00 00
+0x00007ffde96e1a8a:   48 8b cb e8 ca fe ff ff ba 78 00 00 00 48 8b cb
+0x00007ffde96e1a9a:   e8 c5 0e 00 00 48 8d 0d da 47 00 00 48 83 c4 20
+0x00007ffde96e1aaa:   5b e9 8c 0c 00 00 48 89 5c 24 08 48 89 74 24 10
+0x00007ffde96e1aba:   57 48 83 ec 20 41 8b f1 4c 8b c9 48 8b fa 4d 85
+0x00007ffde96e1aca:   c0 74 72 85 f6 74 6e 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffde96e1ada:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffde96e1aea:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 33
+0x00007ffde96e1afa:   d2 0f ba f0 1f f7 f6 49 8b 01 49 8b c9 48 63 d2
+0x00007ffde96e1b0a:   41 8b 14 90 ff 50 08 85 c0 7e 24 8a 0f eb 10 69
+0x00007ffde96e1b1a:   c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3 84
+0x00007ffde96e1b2a:   c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 09 79
+0x00007ffde96e1b3a:   04 f7 d0 eb 03 83 c8 ff 48 8b 5c 24 30 48 8b 74
+0x00007ffde96e1b4a:   24 38 48 83 c4 20 5f c3 cc cc 48 89 5c 24 08 48
+0x00007ffde96e1b5a:   89 74 24 10 57 48 83 ec 20 48 8b f1 48 8d 0d 13
+0x00007ffde96e1b6a:   47 00 00 e8 c2 0b 00 00 33 ff 39 3d 9e 44 00 00
+0x00007ffde96e1b7a:   76 24 48 8b 05 9d 44 00 00 48 8b d6 48 8b 1c f8
+0x00007ffde96e1b8a:   48 8b 0b e8 78 1f 00 00 85 c0 74 2b ff c7 3b 3d
+0x00007ffde96e1b9a:   7a 44 00 00 72 dc 33 db 48 8d 0d d7 46 00 00 e8
+0x00007ffde96e1baa:   8e 0b 00 00 48 8b 74 24 38 48 8b c3 48 8b 5c 24
+0x00007ffde96e1bba:   30 48 83 c4 20 5f c3 ff 43 08 eb dc cc cc 48 89
+0x00007ffde96e1bca:   5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b d9
+0x00007ffde96e1bda:   48 8b f2 48 8b 49 10 49 8b f8 8b 53 30 48 8b 01
+0x00007ffde96e1bea:   ff 50 20 4c 8b 43 50 48 8b d6 48 8b 4b 10 44 8b
+0x00007ffde96e1bfa:   c8 e8 b0 fe ff ff 83 f8 ff 74 39 48 8b 4b 10 48
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff6b2240000 - 0x00007ff6b22b8000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\junie.exe
+0x00007ffe06b60000 - 0x00007ffe06dc7000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe054c0000 - 0x00007ffe0558b000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe03eb0000 - 0x00007ffe042b2000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe00c60000 - 0x00007ffe00cff000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ffe05ec0000 - 0x00007ffe0608f000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe046f0000 - 0x00007ffe04717000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe04cf0000 - 0x00007ffe04d1b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe04370000 - 0x00007ffe04499000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe042c0000 - 0x00007ffe04363000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe04720000 - 0x00007ffe0486c000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe060a0000 - 0x00007ffe06838000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffe056c0000 - 0x00007ffe056f1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffe058a0000 - 0x00007ffe0599b000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffde5de0000 - 0x00007ffde5df8000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\jli.dll
+0x00007ffdebfe0000 - 0x00007ffdec270000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9278_none_3e0d1ba8e3303201\COMCTL32.dll
+0x00007ffe05730000 - 0x00007ffe057d9000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffde5dc0000 - 0x00007ffde5dde000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\VCRUNTIME140.dll
+0x00007ffde9fe0000 - 0x00007ffde9fec000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\vcruntime140_1.dll
+0x00007ffdc4170000 - 0x00007ffdc41f9000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\msvcp140.dll
+0x00007ffda2e20000 - 0x00007ffda3bee000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\server\jvm.dll
+0x00007ffe04c20000 - 0x00007ffe04cdc000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe05610000 - 0x00007ffe056b9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe04880000 - 0x00007ffe04998000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe06a40000 - 0x00007ffe06ac0000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe03bc0000 - 0x00007ffe03c1e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffdebfa0000 - 0x00007ffdebfd6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffdf5040000 - 0x00007ffdf504b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe03ba0000 - 0x00007ffe03bb5000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffe02a30000 - 0x00007ffe02a4b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffde96e0000 - 0x00007ffde96ea000 	C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\jimage.dll
+0x00007ffdec290000 - 0x00007ffdec4dc000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffe04f90000 - 0x00007ffe05315000 	C:\WINDOWS\System32\combase.dll
+0x00007ffe04d30000 - 0x00007ffe04e09000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffdee770000 - 0x00007ffdee7ab000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffe04630000 - 0x00007ffe046dc000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie;C:\WINDOWS\SYSTEM32;C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9278_none_3e0d1ba8e3303201;C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\runtime\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Raquel\AppData\Local\Microsoft\WindowsApps;C:\Users\Raquel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Raquel\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\junie\3419.22.0\junie\app
+USERNAME=Raquel
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 122 Stepping 1, GenuineIntel
+TMP=C:\Users\Raquel\AppData\Local\Temp
+TEMP=C:\Users\Raquel\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+JNI global refs:
+JNI global refs: 0, weak refs: 0
+
+JNI global refs memory usage: 0, weak refs: 0
+
+Process memory usage:
+Resident Set Size: 12284K (0% of 4012620K total physical memory with 532844K free physical memory)
+
+OOME stack traces (most recent first):
+Classloader memory used:
+Not available (crashed in non-Java thread)
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.9444)
+OS uptime: 5 days 20:54 hours
+
+CPU: total 2 (initial active 0) 
+Processor Information for the first 2 processors :
+  Max Mhz: 1101, Current Mhz: 1101, Mhz Limit: 1101
+
+Memory: 4k page, system-wide physical 3918M (520M free)
+TotalPageFile size 8176M (AvailPageFile size 971M)
+current process WorkingSet (physical memory assigned to process): 12M, peak: 12M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.11+1-b1163.116) for windows-amd64 JRE (21.0.11+1-b1163.116), built on 2026-04-30 by "builduser" with MS VC++ 17.14 (VS2022)
+
+END.
